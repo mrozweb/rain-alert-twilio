@@ -85,7 +85,6 @@ rain-alert-twilio/
 │       └── daily-script.yml    # GitHub Actions workflow
 ├── main.py                     # Main application script
 ├── requirements.txt            # Python dependencies
-├── .env.example                # Example environment variables
 ├── .gitignore                  # Git ignore file
 └── README.md                   # Project documentation
 ```
