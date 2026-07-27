@@ -61,7 +61,7 @@ python main.py
 
 ## ⚙️ GitHub Actions Setup
 
-1. **Fork or create a repository** and push this code
+1. **Create a repository** and push this code
 2. **Add GitHub Secrets**:
    - Go to **Settings → Secrets and variables → Actions**
    - Add the following secrets:
