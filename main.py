@@ -3,14 +3,14 @@ import os
 from twilio.rest import Client
 
 # ========== OPENWEATHER API ==========
-API_KEY = os.environ.get("OWM_API_KEY")
+OWM_API_KEY = os.environ.get("OWM_API_KEY")
 MY_LAT = 52.018785
 MY_LONG = 5.169937
 
 parameters = {
     "lat": MY_LAT,
     "lon": MY_LONG,
-    "appid": API_KEY,
+    "appid": OWM_API_KEY,
     "cnt": 4,
 }
 
@@ -23,10 +23,10 @@ weather_data = response.json()
 
 # ========== TWILIO SETUP ==========
 # Add your Twilio credentials
-TWILIO_ACCOUNT_SID = os.environ.get("ACCOUNT_SID")  # From Twilio Dashboard
-TWILIO_AUTH_TOKEN = os.environ.get("AUTH_TOKEN")    # From Twilio Dashboard
-TWILIO_WHATSAPP_NUMBER = os.environ.get("TWILIO_NR")  # Twilio Sandbox number
-YOUR_WHATSAPP_NUMBER = os.environ.get("MY_VERIFIED_NR")     # Your verified number
+TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID")  # From Twilio Dashboard
+TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")    # From Twilio Dashboard
+TWILIO_WHATSAPP_NUMBER = os.environ.get("TWILIO_WHATSAPP_NUMBER")  # Twilio Sandbox number
+YOUR_WHATSAPP_NUMBER = os.environ.get("YOUR_WHATSAPP_NUMBER")     # Your verified number
 
 # Create Twilio client
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
