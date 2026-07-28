@@ -81,8 +81,9 @@ python main.py
 ```
 rain-alert-twilio/
 ├── .github/
-│   └── workflows/
-│       └── daily-script.yml    # GitHub Actions workflow
+│   └── workflows/              # GitHub Actions workflow
+│       └── scheduled.yml    
+|       └── test.ynl
 ├── main.py                     # Main application script
 ├── requirements.txt            # Python dependencies
 ├── .gitignore                  # Git ignore file
@@ -93,7 +94,7 @@ rain-alert-twilio/
 
 ### Change Check Time
 
-Edit the cron schedule in `.github/workflows/daily-script.yml`:
+Edit the cron schedule in `.github/workflows/scheduled.yml`:
 
 ```yaml
 - cron: '0 9 * * *'  # Change to your preferred time (UTC)
