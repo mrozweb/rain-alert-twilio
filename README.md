@@ -83,7 +83,7 @@ rain-alert-twilio/
 ├── .github/
 │   └── workflows/              # GitHub Actions workflow
 │       └── scheduled.yml    
-|       └── test.ynl
+|       └── test.yml
 ├── main.py                     # Main application script
 ├── requirements.txt            # Python dependencies
 ├── .gitignore                  # Git ignore file
